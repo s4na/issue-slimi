@@ -13,5 +13,5 @@ end
 require 'slimi'
 
 ::Slimi::Filters::Interpolation.new.call(
-  ::Slimi::Parser.new.call(".hoge[*foo(bar)]\n")
+  ::Slimi::Parser.new.call(".hoge[foo()]\n")
 )
